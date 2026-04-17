@@ -5,14 +5,16 @@ import java.time.LocalDate;
 public class Main {
 
 	public static void main(String[] args) {
-		//ejercicio1();
-		//ejercicio2();
-		//ejercicio3();
-		//ejercicio4();
-		//ejercicio5();
-		//ejercicio6();
-		//ejercicio7();
+		ejercicio1();
+		ejercicio2();
+		ejercicio3();
+		ejercicio4();
+		ejercicio5();
+		ejercicio6();
+		ejercicio7();
 		ejercicio8();
+		ejercicio9();
+		ejercicio10();
 	
 
 	}
@@ -74,6 +76,24 @@ public class Main {
         System.out.println("Área rectángulo: " + f1.CalcularArea());
         System.out.println("Área círculo: " + f2.CalcularArea());
 		
+	}
+	
+	public static void ejercicio9() {
+		
+		LibroDigital l1= new LibroDigital("Harry Potter y la piedra filosofal","J. K. Rowling",3);
+		l1.mostrarInfo();
+	}
+	
+	public static void ejercicio10() {
+		
+		Cliente c1=new Cliente("Juan","128433546-4554");
+		FacturaContado f1=new FacturaContado(12353635,"Luis",300,50);
+		System.out.println("Total al Contado: "+f1.calcularTotal());
+		
+		
+		FacturaCredito fc1=new FacturaCredito(112233224,"Lucia",400.40,6,8);
+		System.out.println("Total a credito: "+fc1.calcularTotal());
+		System.out.println("Cuota: "+fc1.calcularCuota());
 	}
 
 }
